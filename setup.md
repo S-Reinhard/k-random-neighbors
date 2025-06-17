@@ -1,25 +1,12 @@
 # 🚀 Project Setup Instructions
 
-This guide helps you set up the environment for this project using [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and [Scoop](https://scoop.sh), a Windows-friendly package manager.
+To run the project in on Windows10/11 the following software is recommended
+1. conda
+2. vs-code
 
----
+## Install conda (via. scoop) 
+Conda is a virtual environment manager for python. Conda comes in two flavours Anaconda and miniconda3. I strongly recommend miniconda3 because it is fast to install, easy to use via the cmd and not bloated unlike Anaconda.
 
-## 🧰 Prerequisites
-
-- Windows 10/11
-- PowerShell
-- Internet connection
-
----
-
-## 🐍 Step 1: Install Miniconda via Scoop (Windows)
-
-If Miniconda is not yet installed:
-
-### 1. Install Scoop
-
-Open **PowerShell** and run:
-
-```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-irm get.scoop.sh | iex
+To install miniconda on Windows I recommend scoop, a command line installer for Windows, which is similar to apt on debian systems.
+1. Install scoop by following the instructions on https://scoop.sh/
+2. Install miniconda3 by copy pasting `scoop bucket add extras` into the command line and then `scoop install extras/miniconda3`
